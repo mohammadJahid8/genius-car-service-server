@@ -114,6 +114,10 @@ app.get('/', (req, res) => {
     res.send('running genius server');
 });
 
+app.get('/hero', (req, res) => {
+    res.send('hero server running');
+})
+
 app.listen(port, () => {
     console.log(`server is running on port ${port}`);
 })
